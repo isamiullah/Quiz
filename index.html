@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Quiz Project</title>
+  </head>
+
+  <body>
+    <header>
+      <a id="leaderboard" style="cursor: pointer"
+        >View Highscores <i class="fas fa-hand-point-left fa-lg"></i
+      ></a>
+      <div class="time">Time: <span class="countdown"></span></div>
+    </header>
+    <main class="center">
+      <div class="startcard">
+        <h2>Coding Quiz Challenge</h2>
+        <p>
+          Try to answer the following code-related questions within the time
+          limit.
+        </p>
+        <p>
+          Keep in mind that incorrect answers will penalize your score/time by
+          ten seconds!
+        </p>
+        <button class="btn">Start Quiz</button>
+      </div>
+    </main>
+    <section class="q-section center toggle">
+      <div class="startcard quiz">
+        <h2 class="question"></h2>
+        <ul class="options"></ul>
+        <div class="correct toggle">Correct!</div>
+        <div class="incorrect toggle">Incorrect!</div>
+      </div>
+    </section>
+    <section class="i-section center toggle">
+      <div class="initials startcard">
+        <h2>All done!</h2>
+        <p>Your final score is <span class="userscore"></span></p>
+        <span>Enter initials:</span>
+        <form>
+          <input type="text" name="name" required />
+          <button class="btn2">Submit</button>
+        </form>
+      </div>
+    </section>
+    <section class="center h-section toggle">
+      <div class="highscore startcard">
+        <h2>Highscore</h2>
+        <ol class="final-result"></ol>
+        <button class="btn2 goback">Go Back</button>
+        <button class="btn2 clear">Clear Highscores</button>
+      </div>
+    </section>
+    <script src="./assets/questions.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
